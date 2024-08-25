@@ -7,7 +7,7 @@ import random, asyncio
 from configs import cfg
     
     API_ID="1490" #ApI ID Get it on my.telegram.org
-    BOT_TOKEN="6235334259:AAFJLtvsTDG_JOTIeMxK7I" #BOT Token Get In On @Botfather
+    BOT_TOKEN="7043502393:AAEdH1AegBbo9KIA91jWcie7KRE9gXXG5kw" #BOT Token Get In On @Botfather
     API_HASH="a46f7b439d0afaa69fc450f754e9" #API Hash
     BOT_USERNAME="" #without @ 
  
@@ -22,12 +22,12 @@ ABOUT = """
 ☃️**About This Bot**☃️
 
 💠Commands : [Click Here](https://telegra.ph/Auto-Join-Reqvest-Accpet-Bot-Commads-12-24)
-🍁Bot created by @EmoBotDevolopers
-📦Source Code : [Click Here](https://github.com/RishBropromax/Auto-Approve-Bot)
+🍁Bot created by @about_tosuu
+📦Source : [Click Here](https://t.me/its_damiann)
 ☘️Framework : [Pyrogram](docs.pyrogram.org)
 🔰Language : [Python](www.python.org)
-🧑‍💻Developer : @AboutRishmika
-🆘Support : [Emo Bot Support](https://t.me/EmoBotSupport)
+🧑‍💻Developer : @its_damiann
+🆘Support : [Bot Support](https://t.me/nothing_bots_support)
 
 """
 
@@ -80,20 +80,20 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/about_tosuu"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/nothing_bots_support")
                     ],
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/AboutRishmika")
+                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/about-tosu/LB_music"),
+                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/its_damiann")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/emApprove_Bot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Nothing_auto_approval_bot?startgroup")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/d5becc3a7c18f619bcd22.png", caption="**🕊️ Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [Emo Bot Devolopers](t.me/EmoBotSupport)**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/d5becc3a7c18f619bcd22.png", caption="**🕊️ Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [Bot Devolopers](t.me/about_tosuu)**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
@@ -127,12 +127,12 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/about_tosuu"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/nothing_bots_support")
                     ],
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/AboutRishmika")
+                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/about-tosu/LB_music"),
+                        InlineKeyboardButton("💻 Devoloper 💻", url="https://t.me/its_damiann")
                     ],
                     [
                         InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/{BOT_USERNAME}?startgroup")
